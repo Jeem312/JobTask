@@ -15,7 +15,7 @@ const Footer = () => {
         </div>
         <h1 className="ml-3 text-4xl text-white"><span className=' font-bold'>M</span>umair</h1>
       </div>
-   <div className='flex text-white gap-6 font-semibold mt-6'>
+   <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 text-white gap-6 font-semibold mt-6'>
     
    <Link to="/" className="hover:text-[#FD6F00]">
           Home
