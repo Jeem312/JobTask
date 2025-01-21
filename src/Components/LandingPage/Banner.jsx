@@ -16,7 +16,7 @@ const Banner = () => {
 
       {/* Right Section */}
       <div className="relative">
-        <div className="w-[300px] h-[300px] rounded-full overflow-hidden border-8 border-orange-500">
+        <div className="w-[300px] h-[300px] rounded-full overflow-hidden border-8 border-[#FD6F00">
           <img
             src={img}
             alt="Muhammad Umair"
