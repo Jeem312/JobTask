@@ -17,7 +17,7 @@ const Navbar = () => {
         <div className="bg-orange-500 text-white font-bold text-lg rounded-full w-10 h-10 flex items-center justify-center">
           MV
         </div>
-        <h1 className="ml-3 text-xl font-bold">Mumair</h1>
+        <h1 className="ml-3 text-xl text-white"><span className=' font-bold'>M</span>umair</h1>
       </div>
 
       {/* Hamburger Icon */}
