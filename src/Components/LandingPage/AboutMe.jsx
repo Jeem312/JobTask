@@ -16,7 +16,7 @@ const AboutMe = () => {
         <img
           src={img}
           alt="Person"
-          className="w-full h-full object-cover rounded-full border-8 border-orange-500"
+          className="w-full h-full object-cover rounded-full border-8 border-[#FD6F00]"
         />
       </div>
 
