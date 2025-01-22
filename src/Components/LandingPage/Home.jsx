@@ -6,19 +6,36 @@ import Contact from './Contact';
 import Services from '../Services';
 import Projects from './Projects';
 import Testimony from './Testimony';
+import { Element } from 'react-scroll';
+
+
 
 const Home = () => {
-    return (
-        <div>
-<Banner></Banner>
-<AboutMe></AboutMe>
-<Services></Services>
-<Projects></Projects>
-<Testimony></Testimony>
-<Contact></Contact>
-
-        </div>
-    );
+  return (
+    <div>
+      
+      <Element name="/banner" >
+       <Banner/>
+      </Element>
+      <Element name="/about">
+        <AboutMe/>
+      </Element>
+      <Element name="/services">
+        <Services/>
+      </Element>
+      <Element name="/projects" >
+       <Projects/>
+      </Element>
+      <Element name="/testimonials">
+      <Testimony/>
+      </Element>
+      <Element name="/contact" >
+       <Contact/>
+      </Element>
+    </div>
+  );
 };
 
 export default Home;
+
+     
