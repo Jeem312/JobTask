@@ -21,14 +21,14 @@ const Projects = () => {
 
   return (
     <div className="p-8  min-h-screen">
-      <h1 className="text-3xl font-bold mb-6 text-center">My Projects</h1>
+      <h1 className="text-3xl text-white font-bold mb-6 text-center">My Projects</h1>
       {/* Filter Buttons */}
       <div className="flex justify-center space-x-4 mb-8">
         {["All", "Graphic Design", "App Design", "Web Design"].map((cat) => (
           <button
             key={cat}
             onClick={() => setFilter(cat)}
-            className={`px-3 py-1 rounded ${
+            className={`p-2 md:px-3 md:py-1 rounded ${
               filter === cat ? "bg-[#FD6F00] text-white" : "bg-white text-black"
             }`}
           >

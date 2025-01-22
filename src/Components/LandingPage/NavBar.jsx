@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
-import cv from "../../assets/Shanjida_Jeem's_ resume.pdf"
+import cv from "../../assets/Shanjida_Jeem's_ resume.pdf";
+
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -15,10 +16,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="text-white flex items-center justify-between px-6 py-4">
+    <nav className="text-white flex bg-gray-900 items-center justify-between px-6 rounded-lg">
       {/* Logo */}
       <div className="flex items-center">
-        <div className="bg-orange-500 text-white font-bold text-lg rounded-full w-10 h-10 flex items-center justify-center">
+        <div className="bg-orange-500 text-white  font-bold text-lg rounded-full w-10 h-10 flex items-center justify-center">
           MV
         </div>
         <h1 className="ml-3 text-xl text-white">
@@ -41,19 +42,11 @@ const Navbar = () => {
       <div
         className={`${
           isMenuOpen ? "translate-x-0" : "-translate-x-full"
-        } fixed top-0 left-0 w-2/3 h-full  text-white flex flex-col items-start justify-center space-y-6 px-6 py-4 transition-transform duration-300 md:static md:translate-x-0 md:flex md:flex-row md:items-center md:justify-end md:space-y-0 md:space-x-6`}
+        } fixed top-0 left-0 w-full h-full bg-gray-900  bg-opacity-80 text-white flex flex-col items-center justify-center space-y-6 px-6 py-4 transition-transform duration-300 md:static md:translate-x-0 md:flex md:flex-row md:items-center md:justify-end md:space-y-0 md:space-x-6`}
       >
+       
         <Link
-          to="banner"
-          smooth={true}
-          duration={500}
-          className="cursor-pointer hover:text-[#FD6F00]"
-          onClick={toggleMenu}
-        >
-          Home
-        </Link>
-        <Link
-          to="/about"
+          to="about"
           smooth={true}
           duration={500}
           className="cursor-pointer hover:text-[#FD6F00]"
@@ -62,7 +55,7 @@ const Navbar = () => {
           About Me
         </Link>
         <Link
-          to="/services"
+          to="services"
           smooth={true}
           duration={500}
           className="cursor-pointer hover:text-[#FD6F00]"
@@ -71,7 +64,7 @@ const Navbar = () => {
           Services
         </Link>
         <Link
-          to="/projects"
+          to="projects"
           smooth={true}
           duration={500}
           className="cursor-pointer hover:text-[#FD6F00]"
@@ -80,7 +73,7 @@ const Navbar = () => {
           Projects
         </Link>
         <Link
-          to="/testimonials"
+          to="testimonials"
           smooth={true}
           duration={500}
           className="cursor-pointer hover:text-[#FD6F00]"
@@ -89,7 +82,7 @@ const Navbar = () => {
           Testimonials
         </Link>
         <Link
-          to="/contact"
+          to="contact"
           smooth={true}
           duration={500}
           className="cursor-pointer hover:text-[#FD6F00]"
@@ -98,8 +91,7 @@ const Navbar = () => {
           Contact
         </Link>
         <a
-       href={cv}
-         
+          href={cv}
           className="btn bg-[#FF5400] text-white flex items-center"
           onClick={handleDownloadCV}
         >

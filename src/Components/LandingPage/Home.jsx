@@ -14,22 +14,22 @@ const Home = () => {
   return (
     <div>
       
-      <Element name="/banner" >
+      <Element name="banner" >
        <Banner/>
       </Element>
-      <Element name="/about">
+      <Element name="about">
         <AboutMe/>
       </Element>
-      <Element name="/services">
+      <Element name="services">
         <Services/>
       </Element>
-      <Element name="/projects" >
+      <Element name="projects" >
        <Projects/>
       </Element>
-      <Element name="/testimonials">
+      <Element name="testimonials">
       <Testimony/>
       </Element>
-      <Element name="/contact" >
+      <Element name="contact" >
        <Contact/>
       </Element>
     </div>

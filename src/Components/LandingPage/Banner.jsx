@@ -6,7 +6,7 @@ import { Link } from "react-scroll";
 
 const Banner = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-between items-center gap-20 text-white h-screen px-10">
+    <div className="flex flex-col lg:flex-row justify-between items-center gap-20 text-white h-screen px-10">
       {/* Left Section */}
       <div className="flex flex-col md:flex-1">
         <p className="md:text-start">Hi I am</p>
@@ -19,8 +19,8 @@ const Banner = () => {
           I am passionate about crafting beautiful and user-friendly interfaces that provide an exceptional user experience. Let’s work together to bring your ideas to life!
         </p>
 
-        <div className="flex md:justify-start mt-4">
-        <Link to="/contact" smooth= {true}>
+        <div className="flex justify-center md:justify-start mt-4">
+        <Link to="contact" smooth= {true}>
         <button className="bg-[#FD6F00] hover:text-[#FD6F00] text-white font-semibold py-2 px-6 rounded transition">
             Hire Me
           </button></Link>
@@ -38,7 +38,7 @@ const Banner = () => {
         </div>
         
         {/* Social Media Icons */}
-        <div className="flex space-x-4 mt-6">
+        <div className="hidden lg:flex space-x-4 mt-6">
           <a href="#" className="text-white hover:text-white">
             <FaFacebook size={30} />
           </a>

@@ -1,7 +1,8 @@
 import React from 'react';
 import { CiLinkedin } from 'react-icons/ci';
 import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
+
 
 const Footer = () => {
     return (
@@ -17,35 +18,35 @@ const Footer = () => {
       </div>
    <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 text-white gap-6 font-semibold mt-6'>
     
-   <Link to="/" className="hover:text-[#FD6F00]">
+   <Link to="banner" className="hover:text-[#FD6F00]">
           Home
         </Link>
-        <Link to="/about" className="hover:text-[#FD6F00]">
+        <Link to="about" className="hover:text-[#FD6F00]">
           About Me
         </Link>
         <Link
-          to="/services"
+          to="services"
           className="hover:text-[#FD6F00]"
           
         >
           Services
         </Link>
         <Link
-          to="/projects"
+          to="projects"
           className="hover:text-[#FD6F00]"
         
         >
           Projects
         </Link>
         <Link
-          to="/testimonials"
+          to="testimonials"
           className="hover:text-[#FD6F00]"
          
         >
           Testimonials
         </Link>
         <Link
-          to="/contact"
+          to="contact"
           className="hover:text-[#FD6F00]"
           
         >
