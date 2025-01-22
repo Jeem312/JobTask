@@ -36,9 +36,9 @@ const Services = () => {
         <br />
         Explore my portfolio to see how I blend aesthetics with functionality.
       </p>
-      <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 text-black  rounded-lg p-4 mt-6'>
+      <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-3 text-black  rounded-lg p-4 mt-6'>
         {servicesData.map((service, index) => (
-          <div key={index} className=' bg-[#F8F8F8] rounded-lg p-4 my-4  '>
+          <div key={index} className=' bg-[#F8F8F8] hover:bg-[#FD6F00] hover:text-white rounded-lg p-4 my-4  '>
             <img src={service.img} alt={service.title} className='mb-2 w-10' />
             <h3 className='font-semibold flex justify-start'>{service.title}</h3>
             <p className='text-start'>{service.description}</p>
