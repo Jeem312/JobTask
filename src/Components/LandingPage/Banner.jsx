@@ -2,6 +2,7 @@ import React from "react";
 import img from "../../assets/young-bearded-man-with-striped-shirt.jpg";
 import { CiLinkedin } from "react-icons/ci";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 const Banner = () => {
   return (
@@ -19,9 +20,10 @@ const Banner = () => {
         </p>
 
         <div className="flex md:justify-start mt-4">
-          <button className="bg-[#FD6F00] hover:text-[#FD6F00] text-white font-semibold py-2 px-6 rounded transition">
+        <Link to="/contact" smooth= {true}>
+        <button className="bg-[#FD6F00] hover:text-[#FD6F00] text-white font-semibold py-2 px-6 rounded transition">
             Hire Me
-          </button>
+          </button></Link>
         </div>
       </div>
 
